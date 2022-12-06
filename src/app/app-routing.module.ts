@@ -4,7 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  {path:'',component:MainComponent},
+  {path:'',redirectTo:'/main' ,pathMatch:'full'},
   {path:'main' ,component:MainComponent},
   {path:'about' ,component:AboutComponent},
   
